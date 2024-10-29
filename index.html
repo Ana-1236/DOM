@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="form" action="">
+        <label id="label">Usuario</label>
+        <input type="text">
+        <label for="">Contraseña</label>
+        <input type="text">
+        <div class="buttons">
+            <button type="button" onclick="iniciarSesion()">Iniciar Sesion</button>
+            <button type="button">¿No tiene cuenta?</button>
+        </div>
+    </form>
+<form class="form" action="" style="display: none;">
+    <input id="rnombre" type="text">
+    <input id="rcorreo" type="text">
+    <input id="rcontraseña" type="text">
+    <input id="rprofesion" type="text">
+    <input id="rusuario" type="text">
+    <div>
+        <button onclick="registrarUsuario" type="button">registrar</button>
+<button>¿Ya tiene una cuenta?</button>
+    </div>
+</form>
+    <script src="script.js"></script>
+</body>
+
+</html>

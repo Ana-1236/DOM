@@ -1,0 +1,15 @@
+Selectores del DOM
+getElement:
+    getElementById
+    getElementByTagName
+    getElementByClassName
+querySelector:
+    querySelector
+    querySelectorAll
+
+
+Casi todas lass etq html tienen la posibilidad de cambiar su contenido de texto desde JavaScript
+
+textcontent permite modificar el contenido de texto de casi todas las etiquetas html; solo no aplica para los input
+
+Para capturar la informaciòn de un input, se utiliza para la propiedad value
