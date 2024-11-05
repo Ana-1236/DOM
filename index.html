@@ -5,32 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icono.png" type="image/x-icon">
     <title>Document</title>
 </head>
 
 <body>
-    <form class="form" action="">
+    <form id="form-login" class="form" action="">
         <label id="label">Usuario</label>
-        <input type="text">
+        <input id="usuario" type="text">
         <label for="">Contraseña</label>
-        <input type="text">
+        <input id="contraseña" type="text">
         <div class="buttons">
             <button type="button" onclick="iniciarSesion()">Iniciar Sesion</button>
-            <button type="button">¿No tiene cuenta?</button>
+            <button id="btnLogin" type="button">¿No tiene cuenta?</button>
         </div>
     </form>
-<form class="form" action="" style="display: none;">
-    <input id="rnombre" type="text">
-    <input id="rcorreo" type="text">
-    <input id="rcontraseña" type="text">
-    <input id="rprofesion" type="text">
-    <input id="rusuario" type="text">
-    <div>
-        <button onclick="registrarUsuario" type="button">registrar</button>
-<button>¿Ya tiene una cuenta?</button>
-    </div>
-</form>
-    <script src="script.js"></script>
+    <form id="form-register" class="form" action="" style="display: none;">
+        <input placeholder="Nombre" id="rnombre" type="text">
+        <input placeholder="Correo" id="rcorreo" type="text">
+        <input placeholder="Contraseña" id="rcontraseña" type="text">
+        <input placeholder="Profesión" id="rprofesion" type="text">
+        <input placeholder="Usuario" id="rusuario" type="text">
+        <div>
+            <button onclick="registrarUsuario()" type="button">Registrar</button>
+            <button type="button" id="btnRegister">¿Ya tiene una cuenta?</button>
+        </div>
+    </form>
+    <script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

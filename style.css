@@ -29,18 +29,54 @@ body {
     border-radius: 10px;
     position: absolute;
 }
-.for div{
+
+.for div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
 
-.form div button{
+.form div button {
     width: 100%;
 }
 
-.form div button:last-child{
+.form div button:first-child {
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.form div button:first-child::after,
+.form div button:first-child::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    /*background-color: blue;*/
+    left: 0;
+    top: 0;
+transition: ease-in-out all 0.6s;
+}
+
+.form div button:first-child:hover::after {
+    width: 100%;
+    background-color: blueviolet;
+    z-index: -1;
+    transition: ease-in-out all .5s;
+}
+
+.form div button:first-child:hover::before {
+    width: 100%;
+    background-color: aqua;
+    z-index: -1;
+    transition: ease-in-out all .1s;
+}
+
+.form div button:last-child {
     background: none;
     border: none;
     margin-top: 15px;
